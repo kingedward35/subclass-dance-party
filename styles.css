@@ -30,3 +30,8 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+.square{
+  border:25px solid green;
+  border-radius:0px;
+  position:absolute;
+}
