@@ -26,8 +26,10 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 .smurf{
-  border:15px solid blue;
-  border-radius:10px;
+  /*width: 100px;*/
+  /*height: 200px;*/
+  border:0px solid blue;
+  border-radius:0px;
   position:absolute;
 }
 .square{

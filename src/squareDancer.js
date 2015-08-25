@@ -1,6 +1,5 @@
 var SquareDancer = function(top, left, timeBetweenSteps){
   Dancer.call(this, top, left, timeBetweenSteps);
-
 };
 
 
@@ -15,5 +14,5 @@ SquareDancer.prototype.step = function(){
     // other effects you can use on a jQuery-wrapped html tag.
     this.$node.addClass('square');
     this.$node.toggle();
-    console.log('blinked');
+//    console.log('blinked');
   };
