@@ -25,3 +25,8 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+.smurf{
+  border:15px solid blue;
+  border-radius:10px;
+  position:absolute;
+}
