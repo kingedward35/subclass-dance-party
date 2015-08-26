@@ -40,7 +40,14 @@ $(document).ready(function(){
       $(window.dancers[i]).css('left', 0);
       $(window.dancers[i]).css('top', topPosition);
     }
-
   });
+
+  $(".dancer").on('click', function(event){
+      $(this).toggle();
+  });
+
+
+
+
 });
 

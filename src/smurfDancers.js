@@ -14,10 +14,10 @@ SmurfDancer.prototype.step = function(left){
     // toggle() is a jQuery method to show/hide the <span> tag.
     // See http://api.jquery.com/category/effects/ for this and
     // other effects you can use on a jQuery-wrapped html tag.
-    console.log(this.left);
+    // console.log(this.left);
     this.$node.html('<img src="smurf.gif" height=90 width=60>');
     this.$node.addClass('smurf');
     this.left *= 0.995;
-    console.log(this.left);
+    // console.log(this.left);
     this.setPosition(this.top, this.left);
   };

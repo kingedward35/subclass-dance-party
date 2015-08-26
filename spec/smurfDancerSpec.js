@@ -13,12 +13,6 @@ describe("smurfDancer", function() {
     expect(smurfDancer.$node).to.be.an.instanceof(jQuery);
   });
 
-  it("should have a step function that makes its node blink", function() {
-    sinon.spy(smurfDancer.$node, 'toggle');
-    smurfDancer.step();
-    expect(smurfDancer.$node.toggle.called).to.be.true;
-  });
-
   describe("dance", function(){
     it("should call step at least once per second", function(){
       sinon.spy(smurfDancer, "step");

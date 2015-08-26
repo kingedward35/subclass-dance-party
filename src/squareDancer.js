@@ -1,5 +1,7 @@
 var SquareDancer = function(top, left, timeBetweenSteps){
   Dancer.call(this, top, left, timeBetweenSteps);
+  this.left = left;
+  this.top = top;
 };
 
 
@@ -14,5 +16,25 @@ SquareDancer.prototype.step = function(){
     // other effects you can use on a jQuery-wrapped html tag.
     this.$node.addClass('square');
     this.$node.toggle();
-//    console.log('blinked');
+
+    var distance = function(top, left){
+      var h;
+      var v;
+      var hDiff; 
+      var vDiff;
+      var dist;
+      for (var i = 0; i < window.dancers.length; i ++) {
+        h = $(window.dancers[i]).css('left');
+        v = $(window.dancers[i]).css('top');
+        hDiff = Number(h.slice(0,h.length-2)) - left;
+        vDiff = Number(v.slice(0,v.length-2)) - top;
+        dist = Math.sqrt((hDiff * hDiff) + (vDiff * vDiff));
+        if (dist < 200) {
+          $(window.dancers[i]).css('left', 0);
+        }
+      }
+    };
+
+    distance(this.top, this.left);
+
   };
