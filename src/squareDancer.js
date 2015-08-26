@@ -20,7 +20,7 @@ SquareDancer.prototype.step = function(){
     var distance = function(top, left){
       var h;
       var v;
-      var hDiff; 
+      var hDiff;
       var vDiff;
       var dist;
       for (var i = 0; i < window.dancers.length; i ++) {
